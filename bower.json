@@ -1,0 +1,25 @@
+{
+  "name": "bovespa",
+  "description": "bovespa project",
+  "main": [
+    "app.js"
+  ],
+  "authors": [
+    "rallristhy", "thales"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "angular": "^1.6.1",
+    "font-awesome": "fontawesome#^4.7.0",
+    "open-sans-fontface": "^1.4.2"
+  }
+}
