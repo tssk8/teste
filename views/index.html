@@ -95,30 +95,45 @@
 				<table class="table table-hover table-condensed">
 					<thead class="thead-inverse">
 				        <tr>
-				            <th>Tip. Reg.</th>
+				            <!-- <th>Tip. Reg.</th> -->
 				            <th>Data do Pregão</th>
-				            <th>Cod. BDI</th>
+				            <!-- <th>Cod. BDI</th> -->
 				            <th>Cod. Neg. do Papel</th>
 				            <th>Tipo Mercado</th>
 				            <th>Representante</th>
 				            <th>Especificacao</th>
-				            <th>Prazo</th>
+				            <!-- <th>Prazo</th> -->
 				            <th>Moeda</th>
 				            <th>Preço de Abertura</th>
+				            <th>Preço Máximo</th>
+				            <th>Preço Minimo</th>
+				            <th>Preço Médio</th>
+				            <th>Preço Últ. Negócios</th>
+				            <th>Preço Melhor Oferta de Compra</th>
+				            <th>Preço Melhor Oferta de Venda</th>
+				            <th>Preço de Exercício para o Mercado</th>
 				        </tr>
 				    </thead>
 				    <tbody>
 				        <tr dir-paginate="cotacao in dataCotacao.bovespaCotacaoData | itemsPerPage:100">
-				            <td>{{cotacao.c_tipo_registro}}</td>
+				            <!-- <td>{{cotacao.c_tipo_registro}}</td> -->
 				            <td>{{cotacao.c_data_do_pregao}}</td>
-				            <td>{{cotacao.c_codigo_bdi}}</td>
+				            <!-- <td>{{cotacao.c_codigo_bdi}}</td> -->
 				            <td>{{cotacao.c_codigo_de_negociacao_do_papel}}</td>
 				            <td>{{cotacao.c_tipo_de_mercado}}</td>
 				            <td>{{cotacao.c_nomres}}</td>
 				            <td>{{cotacao.c_especificacao_do_papel}}</td>
-				            <td>{{cotacao.c_prazot}}</td>
+				            <!-- <td>{{cotacao.c_prazot}}</td> -->
 				            <td>{{cotacao.c_moeda_de_referencia}}</td>
 				            <td>{{cotacao.c_preabe}}</td>
+
+				            <td>{{cotacao.c_premax}}</td>
+				            <td>{{cotacao.c_premin}}</td>
+				            <td>{{cotacao.c_premed}}</td>
+				            <td>{{cotacao.c_preult}}</td>
+				            <td>{{cotacao.c_preofc}}</td>
+				            <td>{{cotacao.c_preofv}}</td>
+				            <td>{{cotacao.c_preexe}}</td>
 				            
 				        </tr>
 				    </tbody>
@@ -132,8 +147,21 @@
 	</section>
 
 	<footer>
-		
+	
+		<div class="container rodape">
 
+		<div class="nome col-xs-4 col-md-4 col-lg-4">
+			<label>Trabalho Construção de Software II</label>
+		</div>
+
+		<div class="nome col-xs-4 col-md-4 col-lg-4">
+			<label>Alunos: Rallristhy, Thales</label>
+		</div>
+
+		<div class="nome col-xs-4 col-md-4 col-lg-4">
+			<label>Universidade Federal de Mato Grosso do Sul</label>
+		</div>
+		
 	</footer>
 
 </body>

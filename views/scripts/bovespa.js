@@ -31,7 +31,8 @@ angular.module('bovespaApp', ['angularUtils.directives.dirPagination']).controll
        /* Recebe o objeto GET por /data */
       $scope.dataHeader.bovespaHeaderData = data.data[0];
       $scope.dataCotacao.bovespaCotacaoData = data.data[1];
-      $scope.dataTrailer.bovespaTrailerData = data.data[3]; 
+      $scope.dataTrailer.bovespaTrailerData = data.data[2]; 
+      console.log(data.data[2]);
 
    }, function errorCallback(response) {
      console.log('Erro ao receber arquivo: ' + response);
