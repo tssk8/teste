@@ -7,6 +7,7 @@
 	<link rel="shortcut icon" href="resources/images/favicon.png" type="image/x-icon" />
   	<link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
   	<link rel="stylesheet" type="text/css" href="bower_components/font-awesome/css/font-awesome.min.css">
+  	<link rel="stylesheet" type="text/css" href="views/css/bovespa.css">
 
   	<!-- Scripts -->
   	<script src="bower_components/jquery/dist/jquery.min.js"></script>
@@ -27,7 +28,7 @@
 				<ul>
 					<li ng-repeat="header in dataHeader.bovespaHeaderData">
 						
-						<div class="col-xs-6 col-md-6 col-lg-6">
+						<div class="nome col-xs-6 col-md-6 col-lg-6">
 							<p>
 								<i class="fa fa-arrow-circle-right"></i>
 								<label>Nome do Arquivo: </label>
@@ -36,7 +37,7 @@
 							</p>
 						</div>
 						
-						<div class="col-xs-6 col-md-6 col-lg-6">
+						<div class="origem col-xs-6 col-md-6 col-lg-6">
 							<p>
 								<i class="fa fa-arrow-circle-right"></i>
 								<label>Cod. Origem: </label>
@@ -44,7 +45,7 @@
 							</p>
 						</div>
 
-						<div class="col-xs-12 col-md-12 col-lg-12">
+						<div class="data col-xs-12 col-md-12 col-lg-12">
 							<p>
 								<i class="fa fa-calendar"></i>
 								<label>Data Geracao: </label>
@@ -107,7 +108,7 @@
 				        </tr>
 				    </thead>
 				    <tbody>
-				        <tr dir-paginate="cotacao in dataCotacao.bovespaCotacaoData | itemsPerPage:50">
+				        <tr dir-paginate="cotacao in dataCotacao.bovespaCotacaoData | itemsPerPage:100">
 				            <td>{{cotacao.c_tipo_registro}}</td>
 				            <td>{{cotacao.c_data_do_pregao}}</td>
 				            <td>{{cotacao.c_codigo_bdi}}</td>
