@@ -67,11 +67,13 @@ section .selecionaArquivo {
 
 section .table{
 	background: linear-gradient(to left, white, white );
+
 }
 
 section .thead-inverse{
 	color: white;
 	background-color: black;
+
 
 }
 
@@ -161,6 +163,7 @@ footer {
 
 footer .rodape {
     padding-top: 15px;
+
 }
 
 /* Efeitos nos titulos do header */
